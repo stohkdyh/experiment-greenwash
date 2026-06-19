@@ -111,8 +111,8 @@
 
                 @for ($i = 1; $i <= 7; $i++)
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="pre1" value="{{ $i }}" {{ old('pre1') == $i ? 'checked' : '' }} />
-                    <label class="form-check-label">{{ $i }}</label>
+                    <input class="form-check-input" type="radio" name="pre1" id="pre1_{{ $i }}" value="{{ $i }}" {{ old('pre1') == $i ? 'checked' : '' }} style="cursor: pointer;" />
+                    <label class="form-check-label" for="pre1_{{ $i }}" style="cursor: pointer;">{{ $i }}</label>
                 </div>
                 @endfor
 
@@ -131,8 +131,8 @@
 
                 @for ($i = 1; $i <= 7; $i++)
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="pre2" value="{{ $i }}" {{ old('pre2') == $i ? 'checked' : '' }} />
-                    <label class="form-check-label">{{ $i }}</label>
+                    <input class="form-check-input" type="radio" name="pre2" id="pre2_{{ $i }}" value="{{ $i }}" {{ old('pre2') == $i ? 'checked' : '' }} style="cursor: pointer;" />
+                    <label class="form-check-label" for="pre2_{{ $i }}" style="cursor: pointer;">{{ $i }}</label>
                 </div>
                 @endfor
 
@@ -151,8 +151,8 @@
 
                 @for ($i = 1; $i <= 7; $i++)
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="pre3" value="{{ $i }}" {{ old('pre3') == $i ? 'checked' : '' }} />
-                    <label class="form-check-label">{{ $i }}</label>
+                    <input class="form-check-input" type="radio" name="pre3" id="pre3_{{ $i }}" value="{{ $i }}" {{ old('pre3') == $i ? 'checked' : '' }} style="cursor: pointer;" />
+                    <label class="form-check-label" for="pre3_{{ $i }}" style="cursor: pointer;">{{ $i }}</label>
                 </div>
                 @endfor
 
@@ -172,8 +172,8 @@
 
                 @for ($i = 1; $i <= 7; $i++)
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="pre4" value="{{ $i }}" {{ old('pre4') == $i ? 'checked' : '' }} />
-                    <label class="form-check-label">{{ $i }}</label>
+                    <input class="form-check-input" type="radio" name="pre4" id="pre4_{{ $i }}" value="{{ $i }}" {{ old('pre4') == $i ? 'checked' : '' }} style="cursor: pointer;" />
+                    <label class="form-check-label" for="pre4_{{ $i }}" style="cursor: pointer;">{{ $i }}</label>
                 </div>
                 @endfor
                 
@@ -191,8 +191,8 @@
 
                 @for ($i = 1; $i <= 7; $i++)
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="pre5" value="{{ $i }}" {{ old('pre5') == $i ? 'checked' : '' }} />
-                    <label class="form-check-label">{{ $i }}</label>
+                    <input class="form-check-input" type="radio" name="pre5" id="pre5_{{ $i }}" value="{{ $i }}" {{ old('pre5') == $i ? 'checked' : '' }} style="cursor: pointer;" />
+                    <label class="form-check-label" for="pre5_{{ $i }}" style="cursor: pointer;">{{ $i }}</label>
                 </div>
                 @endfor
                 
@@ -209,8 +209,8 @@
                 <div class="text-muted small fw-bold text-center flex-shrink-0" style="width: 150px;">Sangat Tidak Setuju</div>    
                 @for ($i = 1; $i <= 7; $i++)
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="pre6" value="{{ $i }}" {{ old('pre6') == $i ? 'checked' : '' }} />
-                    <label class="form-check-label">{{ $i }}</label>
+                    <input class="form-check-input" type="radio" name="pre6" id="pre6_{{ $i }}" value="{{ $i }}" {{ old('pre6') == $i ? 'checked' : '' }} style="cursor: pointer;" />
+                    <label class="form-check-label" for="pre6_{{ $i }}" style="cursor: pointer;">{{ $i }}</label>
                 </div>
                 @endfor
                 
@@ -226,8 +226,8 @@
                 <div class="text-muted small fw-bold text-center flex-shrink-0" style="width: 150px;">Sangat Tidak Setuju</div>
                 @for ($i = 1; $i <= 7; $i++)
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="pre7" value="{{ $i }}" {{ old('pre7') == $i ? 'checked' : '' }} />
-                    <label class="form-check-label">{{ $i }}</label>
+                    <input class="form-check-input" type="radio" name="pre7" id="pre7_{{ $i }}" value="{{ $i }}" {{ old('pre7') == $i ? 'checked' : '' }} style="cursor: pointer;" />
+                    <label class="form-check-label" for="pre7_{{ $i }}" style="cursor: pointer;">{{ $i }}</label>
                 </div>
                 @endfor
                 
@@ -243,8 +243,8 @@
                 <div class="text-muted small fw-bold text-center flex-shrink-0" style="width: 150px;">Sangat Tidak Setuju</div>
                 @for ($i = 1; $i <= 7; $i++)
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="pre8" value="{{ $i }}" {{ old('pre8') == $i ? 'checked' : '' }} />
-                    <label class="form-check-label">{{ $i }}</label>
+                    <input class="form-check-input" type="radio" name="pre8" id="pre8_{{ $i }}" value="{{ $i }}" {{ old('pre8') == $i ? 'checked' : '' }} style="cursor: pointer;" />
+                    <label class="form-check-label" for="pre8_{{ $i }}" style="cursor: pointer;">{{ $i }}</label>
                 </div>
                 @endfor
                 
@@ -260,8 +260,8 @@
                 <div class="text-muted small fw-bold text-center flex-shrink-0" style="width: 150px;">Sangat Tidak Setuju</div>
                 @for ($i = 1; $i <= 7; $i++)
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="pre9" value="{{ $i }}" {{ old('pre9') == $i ? 'checked' : '' }} />
-                    <label class="form-check-label">{{ $i }}</label>
+                    <input class="form-check-input" type="radio" name="pre9" id="pre9_{{ $i }}" value="{{ $i }}" {{ old('pre9') == $i ? 'checked' : '' }} style="cursor: pointer;" />
+                    <label class="form-check-label" for="pre9_{{ $i }}" style="cursor: pointer;">{{ $i }}</label>
                 </div>
                 @endfor
                 
@@ -277,8 +277,8 @@
                 <div class="text-muted small fw-bold text-center flex-shrink-0" style="width: 150px;">Sangat Tidak Setuju</div>
                 @for ($i = 1; $i <= 7; $i++)
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="pre10" value="{{ $i }}" {{ old('pre10') == $i ? 'checked' : '' }} />
-                    <label class="form-check-label">{{ $i }}</label>
+                    <input class="form-check-input" type="radio" name="pre10" id="pre10_{{ $i }}" value="{{ $i }}" {{ old('pre10') == $i ? 'checked' : '' }} style="cursor: pointer;" />
+                    <label class="form-check-label" for="pre10_{{ $i }}" style="cursor: pointer;">{{ $i }}</label>
                 </div>
                 @endfor
                 
@@ -294,8 +294,8 @@
                 <div class="text-muted small fw-bold text-center flex-shrink-0" style="width: 150px;">Sangat Tidak Setuju</div>
                 @for ($i = 1; $i <= 7; $i++)
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="pre11" value="{{ $i }}" {{ old('pre11') == $i ? 'checked' : '' }} />
-                    <label class="form-check-label">{{ $i }}</label>
+                    <input class="form-check-input" type="radio" name="pre11" id="pre11_{{ $i }}" value="{{ $i }}" {{ old('pre11') == $i ? 'checked' : '' }} style="cursor: pointer;" />
+                    <label class="form-check-label" for="pre11_{{ $i }}" style="cursor: pointer;">{{ $i }}</label>
                 </div>
                 @endfor
                 
@@ -312,8 +312,8 @@
                 <div class="text-muted small fw-bold text-center flex-shrink-0" style="width: 150px;">Sangat Tidak Setuju</div>
                 @for ($i = 1; $i <= 7; $i++)
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="pre12" value="{{ $i }}" {{ old('pre12') == $i ? 'checked' : '' }} />
-                    <label class="form-check-label">{{ $i }}</label>
+                    <input class="form-check-input" type="radio" name="pre12" id="pre12_{{ $i }}" value="{{ $i }}" {{ old('pre12') == $i ? 'checked' : '' }} style="cursor: pointer;" />
+                    <label class="form-check-label" for="pre12_{{ $i }}" style="cursor: pointer;">{{ $i }}</label>
                 </div>
                 @endfor
                 
@@ -329,8 +329,8 @@
                 <div class="text-muted small fw-bold text-center flex-shrink-0" style="width: 150px;">Sangat Tidak Setuju</div>
                 @for ($i = 1; $i <= 7; $i++)
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="pre13" value="{{ $i }}" {{ old('pre13') == $i ? 'checked' : '' }} />
-                    <label class="form-check-label">{{ $i }}</label>
+                    <input class="form-check-input" type="radio" name="pre13" id="pre13_{{ $i }}" value="{{ $i }}" {{ old('pre13') == $i ? 'checked' : '' }} style="cursor: pointer;" />
+                    <label class="form-check-label" for="pre13_{{ $i }}" style="cursor: pointer;">{{ $i }}</label>
                 </div>
                 @endfor
                 
@@ -347,8 +347,8 @@
                 <div class="text-muted small fw-bold text-center flex-shrink-0" style="width: 150px;">Sangat Tidak Setuju</div>
                 @for ($i = 1; $i <= 7; $i++)
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="pre14" value="{{ $i }}" {{ old('pre14') == $i ? 'checked' : '' }} />
-                    <label class="form-check-label">{{ $i }}</label>
+                    <input class="form-check-input" type="radio" name="pre14" id="pre14_{{ $i }}" value="{{ $i }}" {{ old('pre14') == $i ? 'checked' : '' }} style="cursor: pointer;" />
+                    <label class="form-check-label" for="pre14_{{ $i }}" style="cursor: pointer;">{{ $i }}</label>
                 </div>
                 @endfor
                 
@@ -365,8 +365,8 @@
                 <div class="text-muted small fw-bold text-center flex-shrink-0" style="width: 150px;">Sangat Tidak Setuju</div>
                 @for ($i = 1; $i <= 7; $i++)
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="pre15" value="{{ $i }}" {{ old('pre15') == $i ? 'checked' : '' }} />
-                    <label class="form-check-label">{{ $i }}</label>
+                    <input class="form-check-input" type="radio" name="pre15" id="pre15_{{ $i }}" value="{{ $i }}" {{ old('pre15') == $i ? 'checked' : '' }} style="cursor: pointer;" />
+                    <label class="form-check-label" for="pre15_{{ $i }}" style="cursor: pointer;">{{ $i }}</label>
                 </div>
                 @endfor
                 
@@ -382,8 +382,8 @@
                 <div class="text-muted small fw-bold text-center flex-shrink-0" style="width: 150px;">Sangat Tidak Setuju</div>
                 @for ($i = 1; $i <= 7; $i++)
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="pre16" value="{{ $i }}" {{ old('pre16') == $i ? 'checked' : '' }} />
-                    <label class="form-check-label">{{ $i }}</label>
+                    <input class="form-check-input" type="radio" name="pre16" id="pre16_{{ $i }}" value="{{ $i }}" {{ old('pre16') == $i ? 'checked' : '' }} style="cursor: pointer;" />
+                    <label class="form-check-label" for="pre16_{{ $i }}" style="cursor: pointer;">{{ $i }}</label>
                 </div>
                 @endfor
                 
@@ -399,8 +399,8 @@
                 <div class="text-muted small fw-bold text-center flex-shrink-0" style="width: 150px;">Sangat Tidak Setuju</div>
                 @for ($i = 1; $i <= 7; $i++)
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="pre17" value="{{ $i }}" {{ old('pre17') == $i ? 'checked' : '' }} />
-                    <label class="form-check-label">{{ $i }}</label>
+                    <input class="form-check-input" type="radio" name="pre17" id="pre17_{{ $i }}" value="{{ $i }}" {{ old('pre17') == $i ? 'checked' : '' }} style="cursor: pointer;" />
+                    <label class="form-check-label" for="pre17_{{ $i }}" style="cursor: pointer;">{{ $i }}</label>
                 </div>
                 @endfor
                 
@@ -416,8 +416,8 @@
                 <div class="text-muted small fw-bold text-center flex-shrink-0" style="width: 150px;">Sangat Tidak Setuju</div>
                 @for ($i = 1; $i <= 7; $i++)
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="pre18" value="{{ $i }}" {{ old('pre18') == $i ? 'checked' : '' }} />
-                    <label class="form-check-label">{{ $i }}</label>
+                    <input class="form-check-input" type="radio" name="pre18" id="pre18_{{ $i }}" value="{{ $i }}" {{ old('pre18') == $i ? 'checked' : '' }} style="cursor: pointer;" />
+                    <label class="form-check-label" for="pre18_{{ $i }}" style="cursor: pointer;">{{ $i }}</label>
                 </div>
                 @endfor
                 
@@ -435,8 +435,8 @@
 
                 @for ($i = 1; $i <= 7; $i++)
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="pre19" value="{{ $i }}" {{ old('pre19') == $i ? 'checked' : '' }} />
-                    <label class="form-check-label">{{ $i }}</label>
+                    <input class="form-check-input" type="radio" name="pre19" id="pre19_{{ $i }}" value="{{ $i }}" {{ old('pre19') == $i ? 'checked' : '' }} style="cursor: pointer;" />
+                    <label class="form-check-label" for="pre19_{{ $i }}" style="cursor: pointer;">{{ $i }}</label>
                 </div>
                 @endfor
                 
@@ -454,8 +454,8 @@
 
                 @for ($i = 1; $i <= 7; $i++)
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="pre20" value="{{ $i }}" {{ old('pre20') == $i ? 'checked' : '' }} />
-                    <label class="form-check-label">{{ $i }}</label>
+                    <input class="form-check-input" type="radio" name="pre20" id="pre20_{{ $i }}" value="{{ $i }}" {{ old('pre20') == $i ? 'checked' : '' }} style="cursor: pointer;" />
+                    <label class="form-check-label" for="pre20_{{ $i }}" style="cursor: pointer;">{{ $i }}</label>
                 </div>
                 @endfor
                 
@@ -474,8 +474,8 @@
 
                 @for ($i = 1; $i <= 7; $i++)
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="pre21" value="{{ $i }}" {{ old('pre21') == $i ? 'checked' : '' }} />
-                    <label class="form-check-label">{{ $i }}</label>
+                    <input class="form-check-input" type="radio" name="pre21" id="pre21_{{ $i }}" value="{{ $i }}" {{ old('pre21') == $i ? 'checked' : '' }} style="cursor: pointer;" />
+                    <label class="form-check-label" for="pre21_{{ $i }}" style="cursor: pointer;">{{ $i }}</label>
                 </div>
                 @endfor
                 <div class="text-muted small fw-bold text-center flex-shrink-0" style="width: 150px;">Sangat Setuju</div>
@@ -493,8 +493,8 @@
 
                 @for ($i = 1; $i <= 7; $i++)
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="pre22" value="{{ $i }}" {{ old('pre22') == $i ? 'checked' : '' }} />
-                    <label class="form-check-label">{{ $i }}</label>
+                    <input class="form-check-input" type="radio" name="pre22" id="pre22_{{ $i }}" value="{{ $i }}" {{ old('pre22') == $i ? 'checked' : '' }} style="cursor: pointer;" />
+                    <label class="form-check-label" for="pre22_{{ $i }}" style="cursor: pointer;">{{ $i }}</label>
                 </div>
                 @endfor
                 <div class="text-muted small fw-bold text-center flex-shrink-0" style="width: 150px;">Sangat Setuju</div>
@@ -510,8 +510,8 @@
                 <div class="text-muted small fw-bold text-center flex-shrink-0" style="width: 150px;">Sangat Tidak Setuju</div>
                 @for ($i = 1; $i <= 7; $i++)
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="pre23" value="{{ $i }}" {{ old('pre23') == $i ? 'checked' : '' }} />
-                    <label class="form-check-label">{{ $i }}</label>
+                    <input class="form-check-input" type="radio" name="pre23" id="pre23_{{ $i }}" value="{{ $i }}" {{ old('pre23') == $i ? 'checked' : '' }} style="cursor: pointer;" />
+                    <label class="form-check-label" for="pre23_{{ $i }}" style="cursor: pointer;">{{ $i }}</label>
                 </div>
                 @endfor
                 <div class="text-muted small fw-bold text-center flex-shrink-0" style="width: 150px;">Sangat Setuju</div>
@@ -529,8 +529,8 @@
 
                 @for ($i = 1; $i <= 7; $i++)
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="pre24" value="{{ $i }}" {{ old('pre24') == $i ? 'checked' : '' }} />
-                    <label class="form-check-label">{{ $i }}</label>
+                    <input class="form-check-input" type="radio" name="pre24" id="pre24_{{ $i }}" value="{{ $i }}" {{ old('pre24') == $i ? 'checked' : '' }} style="cursor: pointer;" />
+                    <label class="form-check-label" for="pre24_{{ $i }}" style="cursor: pointer;">{{ $i }}</label>
                 </div>
                 @endfor
                 <div class="text-muted small fw-bold text-center flex-shrink-0" style="width: 150px;">Sangat Setuju</div>
@@ -548,8 +548,8 @@
 
                 @for ($i = 1; $i <= 7; $i++)
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="pre25" value="{{ $i }}" {{ old('pre25') == $i ? 'checked' : '' }} />
-                    <label class="form-check-label">{{ $i }}</label>
+                    <input class="form-check-input" type="radio" name="pre25" id="pre25_{{ $i }}" value="{{ $i }}" {{ old('pre25') == $i ? 'checked' : '' }} style="cursor: pointer;" />
+                    <label class="form-check-label" for="pre25_{{ $i }}" style="cursor: pointer;">{{ $i }}</label>
                 </div>
                 @endfor
                 <div class="text-muted small fw-bold text-center flex-shrink-0" style="width: 150px;">Sangat Setuju</div>
@@ -566,8 +566,8 @@
 
                 @for ($i = 1; $i <= 7; $i++)
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="pre26" value="{{ $i }}" {{ old('pre26') == $i ? 'checked' : '' }} />
-                    <label class="form-check-label">{{ $i }}</label>
+                    <input class="form-check-input" type="radio" name="pre26" id="pre26_{{ $i }}" value="{{ $i }}" {{ old('pre26') == $i ? 'checked' : '' }} style="cursor: pointer;" />
+                    <label class="form-check-label" for="pre26_{{ $i }}" style="cursor: pointer;">{{ $i }}</label>
                 </div>
                 @endfor
                 <div class="text-muted small fw-bold text-center flex-shrink-0" style="width: 150px;">Sangat Setuju</div>
@@ -585,8 +585,8 @@
 
                 @for ($i = 1; $i <= 7; $i++)
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="pre27" value="{{ $i }}" {{ old('pre27') == $i ? 'checked' : '' }} />
-                    <label class="form-check-label">{{ $i }}</label>
+                    <input class="form-check-input" type="radio" name="pre27" id="pre27_{{ $i }}" value="{{ $i }}" {{ old('pre27') == $i ? 'checked' : '' }} style="cursor: pointer;" />
+                    <label class="form-check-label" for="pre27_{{ $i }}" style="cursor: pointer;">{{ $i }}</label>
                 </div>
                 @endfor
                 <div class="text-muted small fw-bold text-center flex-shrink-0" style="width: 150px;">Sangat Setuju</div>
@@ -603,8 +603,8 @@
 
                 @for ($i = 1; $i <= 7; $i++)
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="pre28" value="{{ $i }}" {{ old('pre28') == $i ? 'checked' : '' }} />
-                    <label class="form-check-label">{{ $i }}</label>
+                    <input class="form-check-input" type="radio" name="pre28" id="pre28_{{ $i }}" value="{{ $i }}" {{ old('pre28') == $i ? 'checked' : '' }} style="cursor: pointer;" />
+                    <label class="form-check-label" for="pre28_{{ $i }}" style="cursor: pointer;">{{ $i }}</label>
                 </div>
                 @endfor
                 <div class="text-muted small fw-bold text-center flex-shrink-0" style="width: 150px;">Sangat Setuju</div>
@@ -621,8 +621,8 @@
 
                 @for ($i = 1; $i <= 7; $i++)
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="pre29" value="{{ $i }}" {{ old('pre29') == $i ? 'checked' : '' }} />
-                    <label class="form-check-label">{{ $i }}</label>
+                    <input class="form-check-input" type="radio" name="pre29" id="pre29_{{ $i }}" value="{{ $i }}" {{ old('pre29') == $i ? 'checked' : '' }} style="cursor: pointer;" />
+                    <label class="form-check-label" for="pre29_{{ $i }}" style="cursor: pointer;">{{ $i }}</label>
                 </div>
                 @endfor
                 <div class="text-muted small fw-bold text-center flex-shrink-0" style="width: 150px;">Sangat Setuju</div>
@@ -639,8 +639,8 @@
 
                 @for ($i = 1; $i <= 7; $i++)
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="pre30" value="{{ $i }}" {{ old('pre30') == $i ? 'checked' : '' }} />
-                    <label class="form-check-label">{{ $i }}</label>
+                    <input class="form-check-input" type="radio" name="pre30" id="pre30_{{ $i }}" value="{{ $i }}" {{ old('pre30') == $i ? 'checked' : '' }} style="cursor: pointer;" />
+                    <label class="form-check-label" for="pre30_{{ $i }}" style="cursor: pointer;">{{ $i }}</label>
                 </div>
                 @endfor
                 <div class="text-muted small fw-bold text-center flex-shrink-0" style="width: 150px;">Sangat Setuju</div>
@@ -657,8 +657,8 @@
 
                 @for ($i = 1; $i <= 7; $i++)
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="pre31" value="{{ $i }}" {{ old('pre31') == $i ? 'checked' : '' }} />
-                    <label class="form-check-label">{{ $i }}</label>
+                    <input class="form-check-input" type="radio" name="pre31" id="pre31_{{ $i }}" value="{{ $i }}" {{ old('pre31') == $i ? 'checked' : '' }} style="cursor: pointer;" />
+                    <label class="form-check-label" for="pre31_{{ $i }}" style="cursor: pointer;">{{ $i }}</label>
                 </div>
                 @endfor
                 <div class="text-muted small fw-bold text-center flex-shrink-0" style="width: 150px;">Sangat Setuju</div>
@@ -675,8 +675,8 @@
 
                 @for ($i = 1; $i <= 7; $i++)
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="pre32" value="{{ $i }}" {{ old('pre32') == $i ? 'checked' : '' }} />
-                    <label class="form-check-label">{{ $i }}</label>
+                    <input class="form-check-input" type="radio" name="pre32" id="pre32_{{ $i }}" value="{{ $i }}" {{ old('pre32') == $i ? 'checked' : '' }} style="cursor: pointer;" />
+                    <label class="form-check-label" for="pre32_{{ $i }}" style="cursor: pointer;">{{ $i }}</label>
                 </div>
                 @endfor
                 <div class="text-muted small fw-bold text-center flex-shrink-0" style="width: 150px;">Sangat Setuju</div>
@@ -693,8 +693,8 @@
 
                 @for ($i = 1; $i <= 7; $i++)
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="pre33" value="{{ $i }}" {{ old('pre33') == $i ? 'checked' : '' }} />
-                    <label class="form-check-label">{{ $i }}</label>
+                    <input class="form-check-input" type="radio" name="pre33" id="pre33_{{ $i }}" value="{{ $i }}" {{ old('pre33') == $i ? 'checked' : '' }} style="cursor: pointer;" />
+                    <label class="form-check-label" for="pre33_{{ $i }}" style="cursor: pointer;">{{ $i }}</label>
                 </div>
                 @endfor
                 <div class="text-muted small fw-bold text-center flex-shrink-0" style="width: 150px;">Sangat Setuju</div>
@@ -711,8 +711,8 @@
 
                 @for ($i = 1; $i <= 7; $i++)
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="pre34" value="{{ $i }}" {{ old('pre34') == $i ? 'checked' : '' }} />
-                    <label class="form-check-label">{{ $i }}</label>
+                    <input class="form-check-input" type="radio" name="pre34" id="pre34_{{ $i }}" value="{{ $i }}" {{ old('pre34') == $i ? 'checked' : '' }} style="cursor: pointer;" />
+                    <label class="form-check-label" for="pre34_{{ $i }}" style="cursor: pointer;">{{ $i }}</label>
                 </div>
                 @endfor
                 <div class="text-muted small fw-bold text-center flex-shrink-0" style="width: 150px;">Sangat Setuju</div>
@@ -729,8 +729,8 @@
 
                 @for ($i = 1; $i <= 7; $i++)
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="pre35" value="{{ $i }}" {{ old('pre35') == $i ? 'checked' : '' }} />
-                    <label class="form-check-label">{{ $i }}</label>
+                    <input class="form-check-input" type="radio" name="pre35" id="pre35_{{ $i }}" value="{{ $i }}" {{ old('pre35') == $i ? 'checked' : '' }} style="cursor: pointer;" />
+                    <label class="form-check-label" for="pre35_{{ $i }}" style="cursor: pointer;">{{ $i }}</label>
                 </div>
                 @endfor
                 <div class="text-muted small fw-bold text-center flex-shrink-0" style="width: 150px;">Sangat Setuju</div>
@@ -747,8 +747,8 @@
 
                 @for ($i = 1; $i <= 7; $i++)
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="pre36" value="{{ $i }}" {{ old('pre36') == $i ? 'checked' : '' }} />
-                    <label class="form-check-label">{{ $i }}</label>
+                    <input class="form-check-input" type="radio" name="pre36" id="pre36_{{ $i }}" value="{{ $i }}" {{ old('pre36') == $i ? 'checked' : '' }} style="cursor: pointer;" />
+                    <label class="form-check-label" for="pre36_{{ $i }}" style="cursor: pointer;">{{ $i }}</label>
                 </div>
                 @endfor
                 <div class="text-muted small fw-bold text-center flex-shrink-0" style="width: 150px;">Sangat Setuju</div>
