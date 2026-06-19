@@ -53,8 +53,8 @@
         </div>
     </nav>
     <!-- Masthead-->
-    <header class="masthead">
-        <div class="container position-relative">
+    <header class="masthead position-relative d-flex align-items-center" style="min-height: 60vh; background: linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.7)), url('assets/img/background-head-2.png') center center / cover no-repeat; width: 100%;">
+        <div class="container position-relative z-1">
             <div class="row justify-content-center">
                 <div class="col-xl-9">
                     <div class="text-center text-white justify-content-center">
@@ -73,60 +73,52 @@
             </div>
         </div>
     </header>
-    <section class="features-icons bg-light text-center" id="Tentang">
-        <div class="container position-relative">
+    <section class="features-icons bg-light text-center py-5" id="Tentang">
+        <div class="container position-relative py-4">
             <div class="row justify-content-center">
                 <div class="col-xxl">
                     <div class="text-black">
                         <h1 class="fw-bold me-auto text-lg-start">Tentang Kami</h1>
                         <hr class="border border-2 me-auto rounded-4 mt-3 mb-4" width="15%">
-                        <h5 class=" me-auto text-lg-start">PT Cisca merupakan perusahaan Air Minum Dalam Kemasan (AMDK)
+                        <p class="lead fs-5 me-auto text-lg-start" style="max-width: 800px;">PT Cisca merupakan perusahaan Air Minum Dalam Kemasan (AMDK)
                             di Indonesia yang berdiri pada tahun 1997 dengan misi memberikan air minum sehat dan higenis
                             untuk masyarakat Indonesia terbebas dari dehidrasi. PT Cista memproduksi air mineral dengan
                             kemasan higienis dengan merk Cista. PT Cisca memiliki tiga prinsip utama yaitu lingkungan,
                             kesehatan, dan sosial dalam rangka untuk menerapkan nilai-nilai keberlanjutan.
-                        </h5>
-                        {{-- <h5 class=" me-auto text-lg-start">PT Cisca merupakan perusahaan Air Minum Dalam Kemasan (AMDK)
-                            di Indonesia yang berdiri pada tahun 1997 dengan misi memberikan air minum sehat dan higenis
-                            untuk masyarakat Indonesia terbebas dari dehidrasi. PT Cisca Company memproduksi minuman
-                            sari buah dalam kemasan dengan higienis dan siap santap yaitu Nifruit dengan teknologi
-                            pengolahan pangan dan pengemasan yang mutakhir. PT Cisca memiliki tiga prinsip utama yaitu
-                            lingkungan, kesehatan, dan sosial dalam rangka untuk menerapkan nilai-nilai keberlanjutan.
-                        </h5> --}}
-                    </div>
-                </div>
-            </div>
-        </div>
+                        </p>
     </section>
     <!-- Image Showcases-->
     <section class="showcase" id="Komitmen">
         <div class="container-fluid p-0">
-            <div class="row g-0">
-                <div class="col-lg-6 order-lg-2 text-white showcase-img"
-                    style="background-image: url('assets/img/Desain\ Website\ Eksperimen\ 1.png')"></div>
-                <div class="col-lg-6 order-lg-1 my-auto showcase-text">
-                    <h2>Perlindungan Sumber Daya Air</h2>
-                    <p class="lead mb-0">PT Cista memiliki komitmen untuk memberikan perlindungan sumber daya air untuk
+            <div class="row g-0 align-items-stretch">
+                <div class="col-lg-6 order-lg-2 p-0">
+                    <img src="assets/img/Desain Website Eksperimen 1.png" class="w-100 h-100 object-fit-cover" alt="Perlindungan Sumber Daya Air" style="min-height: 40vh;">
+                </div>
+                <div class="col-lg-6 order-lg-1 my-auto p-5 p-lg-6 text-center text-lg-start">
+                    <h2 class="fw-bold mb-4">Perlindungan Sumber Daya Air</h2>
+                    <p class="lead mb-0 fs-5">PT Cista memiliki komitmen untuk memberikan perlindungan sumber daya air untuk
                         keberlanjutan kehidupan dengan menjaga sumber daya air dan lingkungan, penyediaan air bersih,
                         pengolahan limbah cair, serta mendorong sirkularitas air dalam sistem produksi.</p>
                 </div>
             </div>
-            <div class="row g-0">
-                <div class="col-lg-6 text-white showcase-img"
-                    style="background-image: url('assets/img/Desain\ Website\ Eksperimen\ 2.png')"></div>
-                <div class="col-lg-6 my-auto showcase-text">
-                    <h2>Pengurangan Emisi Karbon (CO2)</h2>
-                    <p class="lead mb-0">PT Cista memiliki komitmen yang besar dalam tanggung jawab lingkungan, sosial,
+            <div class="row g-0 align-items-stretch bg-light">
+                <div class="col-lg-6 p-0">
+                    <img src="assets/img/Desain Website Eksperimen 2.png" class="w-100 h-100 object-fit-cover" alt="Pengurangan Emisi Karbon" style="min-height: 40vh;">
+                </div>
+                <div class="col-lg-6 my-auto p-5 p-lg-6 text-center text-lg-start">
+                    <h2 class="fw-bold mb-4">Pengurangan Emisi Karbon (CO2)</h2>
+                    <p class="lead mb-0 fs-5">PT Cista memiliki komitmen yang besar dalam tanggung jawab lingkungan, sosial,
                         dan tata kelola (ESG). PT Cista selalu mengedepankan strategi keberlanjutan yang ramah
                         lingkungan dalam kegiatan operasionalnya secara konsisten.</p>
                 </div>
             </div>
-            <div class="row g-0">
-                <div class="col-lg-6 order-lg-2 text-white showcase-img"
-                    style="background-image: url('assets/img/Desain\ Website\ Eksperimen\ 3.png')"></div>
-                <div class="col-lg-6 order-lg-1 my-auto showcase-text">
-                    <h2>Kemasan Ramah Lingkungan</h2>
-                    <p class="lead mb-0">PT Cista selalu berkomitmen untuk mengurangi sampah plastik dengan
+            <div class="row g-0 align-items-stretch">
+                <div class="col-lg-6 order-lg-2 p-0">
+                    <img src="assets/img/Desain Website Eksperimen 3.png" class="w-100 h-100 object-fit-cover" alt="Kemasan Ramah Lingkungan" style="min-height: 40vh;">
+                </div>
+                <div class="col-lg-6 order-lg-1 my-auto p-5 p-lg-6 text-center text-lg-start">
+                    <h2 class="fw-bold mb-4">Kemasan Ramah Lingkungan</h2>
+                    <p class="lead mb-0 fs-5">PT Cista selalu berkomitmen untuk mengurangi sampah plastik dengan
                         mengotimalisasi kemasan ramah lingkungan dan pengumpulan sampah plastik dengan mendirikan
                         bank-bank sampah serta mengolah kembali sampah plastik menjadi botol Cista.</p>
                 </div>
@@ -134,112 +126,125 @@
         </div>
     </section>
     <!-- Green Initiative -->
-    <section class="features-icons bg-light text-center" style="background: white;" id="Green">
-        <div class="container">
-            <h1 class="fw-bold">Green Initiative</h1>
-            <hr class="border border-2 mx-auto rounded-4 mt-4 mb-5" width="20%">
-            <div class="row justify-content-center">
-                <div class="col-lg-4">
-                    <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
-                        <div class="features-icons-icon mb-2">
-                            <img src="assets/img/remove-bg/1.png" alt="..." height="90%">
+    <section class="features-icons text-center py-5" style="background: white;" id="Green">
+        <div class="container py-4">
+            <h1 class="fw-bold display-5">Green Initiative</h1>
+            <hr class="border border-2 mx-auto rounded-4 mt-4 mb-5" width="10%">
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm features-icons-item mx-auto px-3 py-4">
+                        <div class="card-body">
+                            <div class="features-icons-icon mb-4">
+                                <img src="assets/img/remove-bg/1.png" alt="..." style="max-height: 100px;">
+                            </div>
+                            <h3 class="fst-italic fw-bold mb-3" style="color: var(--bs-primarycolor);">Recycled Plastic</h3>
+                            <p class="lead mb-0" style="font-size: 1rem;">PT Cista mendesain kemasan botol plastik yang mengandung bahan baku rPET
+                                (recycled PET) sehingga produk air PT Cista memiliki kemasan yang 100% dapat didaur ulang.
+                            </p>
                         </div>
-                        <h3 class="fst-italic fw-bold" style="color: var(--bs-primarycolor);">Recycled Plastic</h3>
-                        <p class="lead mb-0">PT Cista mendesain kemasan botol plastik yang mengandung bahan baku rPET
-                            (recycled PET) sehingga produk air PT Cista memiliki kemasan yang 100% dapat didaur ulang.
-                        </p>
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
-                        <div class="features-icons-icon mb-2">
-                            <img src="assets/img/remove-bg/2.png" alt="..." height="90%">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm features-icons-item mx-auto px-3 py-4">
+                        <div class="card-body">
+                            <div class="features-icons-icon mb-4">
+                                <img src="assets/img/remove-bg/2.png" alt="..." style="max-height: 100px;">
+                            </div>
+                            <h3 class="fw-bold mb-3" style="color: var(--bs-primarycolor);">Penanaman Pohon</h3>
+                            <p class="lead mb-0" style="font-size: 1rem;">Penanaman 1.725.825 pohon sejak tahun 2015 yang bertujuan untuk program
+                                keberlanjutan sehingga mendorong penyerapan air secara alami.</p>
                         </div>
-                        <h3 class="fw-bold" style="color: var(--bs-primarycolor);">Penanaman Pohon</h3>
-                        <p class="lead mb-0">Penanaman 1.725.825 pohon sejak tahun 2015 yang bertujuan untuk program
-                            keberlanjutan sehingga mendorong penyerapan air secara alami.</p>
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
-                        <div class="features-icons-icon mb-2">
-                            <img src="assets/img/remove-bg/3.png" alt="..." height="90%">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm features-icons-item mx-auto px-3 py-4">
+                        <div class="card-body">
+                            <div class="features-icons-icon mb-4">
+                                <img src="assets/img/remove-bg/3.png" alt="..." style="max-height: 100px;">
+                            </div>
+                            <h4 class="fw-bold mb-3" style="color: var(--bs-primarycolor);">3R (<i>Reduce, Reuse, Recycle</i>)</h4>
+                            <p class="lead mb-0" style="font-size: 1rem;">Terdapat tiga tahap sirkularitas air dalam sistem produksi yang meliputi
+                                efisiensi produksi air, menggunakan ulang air sisa produksi, dan memanfaatkan kembali air
+                                untuk keperluan umum, sehingga mencapai 40% efisiensi air.</p>
                         </div>
-                        <h4 class="fw-bold" style="color: var(--bs-primarycolor);">3R (<i>Reduce, Reuse, Recycle</i>)
-                        </h4>
-                        <p class="lead mb-0">Terdapat tiga tahap sirkularitas air dalam sistem produksi yang meliputi
-                            efisiensi produksi air, menggunakan ulang air sisa produksi, dan memanfaatkan kembali air
-                            untuk keperluan umum, sehingga mencapai 40% efisiensi air.</p>
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
-                        <div class="features-icons-icon mb-2">
-                            <img src="assets/img/remove-bg/4.png" alt="..." height="90%">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm features-icons-item mx-auto px-3 py-4">
+                        <div class="card-body">
+                            <div class="features-icons-icon mb-4">
+                                <img src="assets/img/remove-bg/4.png" alt="..." style="max-height: 100px;">
+                            </div>
+                            <h3 class="fw-bold fst-italic mb-3" style="color: var(--bs-primarycolor);">Wastewater Treatment Plant</h3>
+                            <p class="lead mb-0" style="font-size: 1rem;">Instalasi Pengolahan Air Limbah (IPAL) yang telah melewati prosedur
+                                pengolahan air limbah sehingga memenuhi syarat dan ketentuan ambang batas yang berlaku.</p>
                         </div>
-                        <h3 class="fw-bold fst-italic" style="color: var(--bs-primarycolor);">Wastewater Treatment
-                            Plant
-                        </h3>
-                        <p class="lead mb-0">Instalasi Pengolahan Air Limbah (IPAL) yang telah melewati prosedur
-                            pengolahan air limbah sehingga memenuhi syarat dan ketentuan ambang batas yang berlaku.</p>
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
-                        <div class="features-icons-icon mb-2">
-                            <img src="assets/img/remove-bg/5.png" alt="..." height="90%">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm features-icons-item mx-auto px-3 py-4">
+                        <div class="card-body">
+                            <div class="features-icons-icon mb-4">
+                                <img src="assets/img/remove-bg/5.png" alt="..." style="max-height: 100px;">
+                            </div>
+                            <h3 class="fw-bold mb-3" style="color: var(--bs-primarycolor);">Tempat Pengelolaan Sampah</h3>
+                            <p class="lead mb-0" style="font-size: 1rem;">Pembangunan 93 bank sampah yang tersebar di beberapa titik, di mana satu
+                                titik bank sampah dapat menampung 150.000 ton sampah botol plastik. Pada tahun 2023
+                                terkumpul sebanyak 12.579.000 ton.</p>
                         </div>
-                        <h3 class="fw-bold" style="color: var(--bs-primarycolor);">Tempat Pengelolaan Sampah</h3>
-                        <p class="lead mb-0">Pembangunan 93 bank sampah yang tersebar di beberapa titik, di mana satu
-                            titik bank sampah dapat menampung 150.000 ton sampah botol plastik. Pada tahun 2023
-                            terkumpul sebanyak 12.579.000 ton.</p>
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
-                        <div class="features-icons-icon mb-2">
-                            <img src="assets/img/remove-bg/6.png" alt="..." height="90%">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm features-icons-item mx-auto px-3 py-4">
+                        <div class="card-body">
+                            <div class="features-icons-icon mb-4">
+                                <img src="assets/img/remove-bg/6.png" alt="..." style="max-height: 100px;">
+                            </div>
+                            <h3 class="fw-bold mb-3" style="color: var(--bs-primarycolor);">Boiler Biomass</h3>
+                            <p class="lead mb-0" style="font-size: 1rem;">PT Cista membangun boiler biomassa berbahan baku sekam padi, di mana dapat
+                                menurunkan emisi karbon sebesar 4.200 ton CO2 atau setara dengan emisi karbon yang diserap
+                                melalui penanaman pohon sebanyak 58.800 pohon.</p>
                         </div>
-                        <h3 class="fw-bold" style="color: var(--bs-primarycolor);">Boiler Biomass</h3>
-                        <p class="lead mb-0">PT Cista membangun boiler biomassa berbahan baku sekam padi, di mana dapat
-                            menurunkan emisi karbon sebesar 4.200 ton CO2 atau setara dengan emisi karbon yang diserap
-                            melalui penanaman pohon sebanyak 58.800 pohon.</p>
                     </div>
                 </div>
-                <div class="col-lg-4 mt-3">
-                    <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
-                        <div class="features-icons-icon mb-2">
-                            <!-- <i class="bi-window m-auto text-primary"></i></div> -->
-                            <img src="assets/img/remove-bg/7.png" alt="..." height="90%">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm features-icons-item mx-auto px-3 py-4">
+                        <div class="card-body">
+                            <div class="features-icons-icon mb-4">
+                                <img src="assets/img/remove-bg/7.png" alt="..." style="max-height: 100px;">
+                            </div>
+                            <h3 class="fw-bold mb-3" style="color: var(--bs-primarycolor);">Program Sanitasi</h3>
+                            <p class="lead mb-0" style="font-size: 1rem;">Pembuatan sumur menara air, instalasi pipa, pompa air, dan sarana Mandi,
+                                Cuci, Kakus (MCK) dengan total 18.425 titik yang tersebar di seluruh Indonesia.</p>
                         </div>
-                        <h3 class="fw-bold" style="color: var(--bs-primarycolor);">Program Sanitasi</h3>
-                        <p class="lead mb-0">Pembuatan sumur menara air, instalasi pipa, pompa air, dan sarana Mandi,
-                            Cuci, Kakus (MCK) dengan total 18.425 titik yang tersebar di seluruh Indonesia.</p>
                     </div>
                 </div>
-                <div class="col-lg-4 mt-3">
-                    <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
-                        <div class="features-icons-icon mb-2">
-                            <img src="assets/img/remove-bg/8.png" alt="..." height="90%">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm features-icons-item mx-auto px-3 py-4">
+                        <div class="card-body">
+                            <div class="features-icons-icon mb-4">
+                                <img src="assets/img/remove-bg/8.png" alt="..." style="max-height: 100px;">
+                            </div>
+                            <h3 class="fw-bold mb-3" style="color: var(--bs-primarycolor);">Panel Surya</h3>
+                            <p class="lead mb-0" style="font-size: 1rem;">Pemasangan Pembangkit Listrik Tenaga Surya (PLTS) di atap Pabrik PT Cista
+                                dengan kapasitas 770 kWp dan menghasilkan listrik sebesar 1 GWh per tahun sehingga mampu
+                                mengurangi emisi karbon sebesar 825 ton CO2 per tahun.</p>
                         </div>
-                        <h3 class="fw-bold" style="color: var(--bs-primarycolor);">Panel Surya</h3>
-                        <p class="lead mb-0">Pemasangan Pembangkit Listrik Tenaga Surya (PLTS) di atap Pabrik PT Cista
-                            dengan kapasitas 770 kWp dan menghasilkan listrik sebesar 1 GWh per tahun sehingga mampu
-                            mengurangi emisi karbon sebesar 825 ton CO2 per tahun.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="features-icons bg-light text-center" style="background: whitesmoke">
-        <div class="container object-fit-contain" id="Video">
-            <h1 class="fw-bold">Video Produk</h1>
-            <hr class="border border-2 mx-auto rounded-4 mt-4" width="15%">
-            <iframe class="object-fit-contain" width="900" height="400"
-                src="https://www.youtube.com/embed/Ikz050ahs_I?si=vKueLsEXkjMMiIPM" title="YouTube video player"
-                frameborder="0" style="z-index: 100 !important"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> {{-- <video src="assets/video/video iklan.mov" class="mx-auto w-100" controls></video> --}}
+    <section class="features-icons text-center py-5" style="background: whitesmoke" id="Video">
+        <div class="container py-4">
+            <h1 class="fw-bold display-5">Video Produk</h1>
+            <hr class="border border-2 mx-auto rounded-4 mt-4 mb-5" width="10%">
+            <div class="ratio ratio-16x9 mx-auto shadow-lg rounded overflow-hidden" style="max-width: 900px;">
+                <iframe src="https://www.youtube.com/embed/Ikz050ahs_I?si=vKueLsEXkjMMiIPM" title="YouTube video player"
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
         </div>
     </section>
     <!-- Pre-Test Button-->

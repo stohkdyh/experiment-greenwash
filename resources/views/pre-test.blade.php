@@ -58,7 +58,7 @@
 </head>
 
 <body style="background-color: #f1f1f1;">
-    <form class="card w-75 mx-auto my-4" action="{{ route('preTest.store') }}" method="POST">
+    <form class="card shadow border-0 mx-auto my-5 p-3 p-md-5 rounded-4" style="max-width: 1000px;" action="{{ route('preTest.store') }}" method="POST">
         
         @csrf
 
@@ -72,7 +72,7 @@
                 4.	Jawablah dengan memilih salah satu dari 7 alternatif jawaban kemudian klik pada kolom yang telah tersedia.
                 5.	Atas partisipasi Saudara/i, peneliti mengucapkan terima kasih.
         </pre>
-        <div class="row mx-5">
+        <div class="row mx-md-5 bg-white p-4 border rounded-4 shadow-sm mb-5">
             <div class="col text-start">
                 <div class="mb-5 text-start"><label class="form-label text-start">
                     <h4>Nama Lengkap</h4>
@@ -96,20 +96,18 @@
         {{-- <p class="text-center mx-5">Mohon isi form dibawah dengan sebenar-benarnya sesuai dengan yang anda rasakan dari
             melihat halaman
             sebelumnya.</p> --}}
-        <hr class="border border-2 mx-auto rounded-4 mb-5" width="90%">
+        
 
         <!-- Card -->
-        <div class="mx-5 mb-5">
+        <div class="mx-md-5 mb-5 p-4 bg-white border rounded-4 shadow-sm">
             <div class="text-center">
-                <p class="fw-medium" style="font-size: 1.1rem;">
+                <p class="fw-medium fs-5 text-dark mb-0">
                     Menurut saya produk ini memiliki citra lingkungan yang baik
                 </p>
             </div>
 
-            <div class="text-center mb-3">
-                <div class="d-inline mx-3">
-                    Sangat Tidak Setuju
-                </div>
+            <div class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3 bg-light p-3 rounded-3 mt-4">
+                <div class="text-muted small fw-bold text-center flex-shrink-0" style="width: 150px;">Sangat Tidak Setuju</div>
 
                 @for ($i = 1; $i <= 7; $i++)
                 <div class="form-check form-check-inline">
@@ -118,22 +116,18 @@
                 </div>
                 @endfor
 
-                <div class="d-inline me-4">
-                    Sangat Setuju
-                </div>
+                <div class="text-muted small fw-bold text-center flex-shrink-0" style="width: 150px;">Sangat Setuju</div>
             </div>
         </div>
-        <div class="mx-5 mb-5">
+        <div class="mx-md-5 mb-5 p-4 bg-white border rounded-4 shadow-sm">
             <div class="text-center">
-                <p class="fw-medium" style="font-size: 1.1rem;">
+                <p class="fw-medium fs-5 text-dark mb-0">
                     Saya merasa klaim lingkungan dari produk ini mendapat dukungan dari masyarakat.
                 </p>
             </div>
 
-            <div class="text-center mb-3">
-                <div class="d-inline mx-3">
-                    Sangat Tidak Setuju
-                </div>
+            <div class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3 bg-light p-3 rounded-3 mt-4">
+                <div class="text-muted small fw-bold text-center flex-shrink-0" style="width: 150px;">Sangat Tidak Setuju</div>
 
                 @for ($i = 1; $i <= 7; $i++)
                 <div class="form-check form-check-inline">
@@ -142,22 +136,18 @@
                 </div>
                 @endfor
 
-                <div class="d-inline me-4">
-                    Sangat Setuju
-                </div>
+                <div class="text-muted small fw-bold text-center flex-shrink-0" style="width: 150px;">Sangat Setuju</div>
             </div>
         </div>
-        <div class="mx-5 mb-5">
+        <div class="mx-md-5 mb-5 p-4 bg-white border rounded-4 shadow-sm">
             <div class="text-center">
-                <p class="fw-medium" style="font-size: 1.1rem;">
+                <p class="fw-medium fs-5 text-dark mb-0">
                     Dibandingkan dengan produk sejenis lainnya, produk ini memiliki citra lingkungan yang lebih baik.
                 </p>
             </div>
 
-            <div class="text-center mb-3">
-                <div class="d-inline mx-3">
-                    Sangat Tidak Setuju
-                </div>
+            <div class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3 bg-light p-3 rounded-3 mt-4">
+                <div class="text-muted small fw-bold text-center flex-shrink-0" style="width: 150px;">Sangat Tidak Setuju</div>
 
                 @for ($i = 1; $i <= 7; $i++)
                 <div class="form-check form-check-inline">
@@ -166,23 +156,19 @@
                 </div>
                 @endfor
 
-                <div class="d-inline me-4">
-                    Sangat Setuju
-                </div>
+                <div class="text-muted small fw-bold text-center flex-shrink-0" style="width: 150px;">Sangat Setuju</div>
             </div>
         </div>
-        <div class="mx-5 mb-5">
+        <div class="mx-md-5 mb-5 p-4 bg-white border rounded-4 shadow-sm">
             <div class="text-center">
-                <p class="fw-medium" style="font-size: 1.1rem;">
+                <p class="fw-medium fs-5 text-dark mb-0">
                     Saya merasa proses produksi dari produk tersebut sudah dilakukan dengan profesional tentang
                     pengelolaan lingkungan.
                 </p>
             </div>
 
-            <div class="text-center mb-3">
-                <div class="d-inline mx-3">
-                    Sangat Tidak Setuju
-                </div>
+            <div class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3 bg-light p-3 rounded-3 mt-4">
+                <div class="text-muted small fw-bold text-center flex-shrink-0" style="width: 150px;">Sangat Tidak Setuju</div>
 
                 @for ($i = 1; $i <= 7; $i++)
                 <div class="form-check form-check-inline">
@@ -191,21 +177,17 @@
                 </div>
                 @endfor
                 
-                <div class="d-inline me-4">
-                    Sangat Setuju
-                </div>
+                <div class="text-muted small fw-bold text-center flex-shrink-0" style="width: 150px;">Sangat Setuju</div>
             </div>
         </div>
-        <div class="mx-5 mb-5">
+        <div class="mx-md-5 mb-5 p-4 bg-white border rounded-4 shadow-sm">
             <div class="text-center">
-                <p class="fw-medium" style="font-size: 1.1rem;">
+                <p class="fw-medium fs-5 text-dark mb-0">
                     Saya senang dengan keputusan memilih produk ini, karena citra ramah lingkungannya. </p>
             </div>
 
-            <div class="text-center mb-3">
-                <div class="d-inline mx-3">
-                    Sangat Tidak Setuju
-                </div>
+            <div class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3 bg-light p-3 rounded-3 mt-4">
+                <div class="text-muted small fw-bold text-center flex-shrink-0" style="width: 150px;">Sangat Tidak Setuju</div>
 
                 @for ($i = 1; $i <= 7; $i++)
                 <div class="form-check form-check-inline">
@@ -214,21 +196,17 @@
                 </div>
                 @endfor
                 
-                <div class="d-inline me-4">
-                    Sangat Setuju
-                </div>
+                <div class="text-muted small fw-bold text-center flex-shrink-0" style="width: 150px;">Sangat Setuju</div>
             </div>
         </div>
-        <div class="mx-5 mb-5">
+        <div class="mx-md-5 mb-5 p-4 bg-white border rounded-4 shadow-sm">
             <div class="text-center">
-                <p class="fw-medium" style="font-size: 1.1rem;">
+                <p class="fw-medium fs-5 text-dark mb-0">
                     Menurut saya, membeli produk ini adalah keputusan yang tepat karena fungsinya yang ramah lingkungan.
                 </p>
             </div>
-            <div class="text-center mb-3">
-                <div class="d-inline mx-3">
-                    Sangat Tidak Setuju
-                </div>    
+            <div class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3 bg-light p-3 rounded-3 mt-4">
+                <div class="text-muted small fw-bold text-center flex-shrink-0" style="width: 150px;">Sangat Tidak Setuju</div>    
                 @for ($i = 1; $i <= 7; $i++)
                 <div class="form-check form-check-inline">
                     <input class="form-check-input" type="radio" name="pre6" value="{{ $i }}" {{ old('pre6') == $i ? 'checked' : '' }} />
@@ -236,20 +214,16 @@
                 </div>
                 @endfor
                 
-                <div class="d-inline me-4">
-                    Sangat Setuju
-                </div>
+                <div class="text-muted small fw-bold text-center flex-shrink-0" style="width: 150px;">Sangat Setuju</div>
             </div>
         </div>
-        <div class="mx-5 mb-5">
+        <div class="mx-md-5 mb-5 p-4 bg-white border rounded-4 shadow-sm">
             <div class="text-center">
-                <p class="fw-medium" style="font-size: 1.1rem;">
+                <p class="fw-medium fs-5 text-dark mb-0">
                     Secara keseluruhan saya senang membeli produk ini karena ramah lingkungan. </p>
             </div>
-            <div class="text-center mb-3">
-                <div class="d-inline mx-3">
-                    Sangat Tidak Setuju
-                </div>
+            <div class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3 bg-light p-3 rounded-3 mt-4">
+                <div class="text-muted small fw-bold text-center flex-shrink-0" style="width: 150px;">Sangat Tidak Setuju</div>
                 @for ($i = 1; $i <= 7; $i++)
                 <div class="form-check form-check-inline">
                     <input class="form-check-input" type="radio" name="pre7" value="{{ $i }}" {{ old('pre7') == $i ? 'checked' : '' }} />
@@ -257,20 +231,16 @@
                 </div>
                 @endfor
                 
-                <div class="d-inline me-4">
-                    Sangat Setuju
-                </div>
+                <div class="text-muted small fw-bold text-center flex-shrink-0" style="width: 150px;">Sangat Setuju</div>
             </div>
         </div>
-        <div class="mx-5 mb-5">
+        <div class="mx-md-5 mb-5 p-4 bg-white border rounded-4 shadow-sm">
             <div class="text-center">
-                <p class="fw-medium" style="font-size: 1.1rem;">
+                <p class="fw-medium fs-5 text-dark mb-0">
                     Dari sudut pandang efektivitas lingkungan, membeli produk ini adalah keputusan yang tepat. </p>
             </div>
-            <div class="text-center mb-3">
-                <div class="d-inline mx-3">
-                    Sangat Tidak Setuju
-                </div>
+            <div class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3 bg-light p-3 rounded-3 mt-4">
+                <div class="text-muted small fw-bold text-center flex-shrink-0" style="width: 150px;">Sangat Tidak Setuju</div>
                 @for ($i = 1; $i <= 7; $i++)
                 <div class="form-check form-check-inline">
                     <input class="form-check-input" type="radio" name="pre8" value="{{ $i }}" {{ old('pre8') == $i ? 'checked' : '' }} />
@@ -278,20 +248,16 @@
                 </div>
                 @endfor
                 
-                <div class="d-inline me-4">
-                    Sangat Setuju
-                </div>
+                <div class="text-muted small fw-bold text-center flex-shrink-0" style="width: 150px;">Sangat Setuju</div>
             </div>
         </div>
-        <div class="mx-5 mb-5">
+        <div class="mx-md-5 mb-5 p-4 bg-white border rounded-4 shadow-sm">
             <div class="text-center">
-                <p class="fw-medium" style="font-size: 1.1rem;">
+                <p class="fw-medium fs-5 text-dark mb-0">
                     Saya puas dengan daya tarik lingkungan dari produk ini. </p>
             </div>
-            <div class="text-center mb-3">
-                <div class="d-inline mx-3">
-                    Sangat Tidak Setuju
-                </div>
+            <div class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3 bg-light p-3 rounded-3 mt-4">
+                <div class="text-muted small fw-bold text-center flex-shrink-0" style="width: 150px;">Sangat Tidak Setuju</div>
                 @for ($i = 1; $i <= 7; $i++)
                 <div class="form-check form-check-inline">
                     <input class="form-check-input" type="radio" name="pre9" value="{{ $i }}" {{ old('pre9') == $i ? 'checked' : '' }} />
@@ -299,20 +265,16 @@
                 </div>
                 @endfor
                 
-                <div class="d-inline me-4">
-                    Sangat Setuju
-                </div>
+                <div class="text-muted small fw-bold text-center flex-shrink-0" style="width: 150px;">Sangat Setuju</div>
             </div>
         </div>
-        <div class="mx-5 mb-5">
+        <div class="mx-md-5 mb-5 p-4 bg-white border rounded-4 shadow-sm">
             <div class="text-center">
-                <p class="fw-medium" style="font-size: 1.1rem;">
+                <p class="fw-medium fs-5 text-dark mb-0">
                     Secara keseluruhan, saya puas dengan produk ini karena kinerjanya yang ramah lingkungan. </p>
             </div>
-            <div class="text-center mb-3">
-                <div class="d-inline mx-3">
-                    Sangat Tidak Setuju
-                </div>
+            <div class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3 bg-light p-3 rounded-3 mt-4">
+                <div class="text-muted small fw-bold text-center flex-shrink-0" style="width: 150px;">Sangat Tidak Setuju</div>
                 @for ($i = 1; $i <= 7; $i++)
                 <div class="form-check form-check-inline">
                     <input class="form-check-input" type="radio" name="pre10" value="{{ $i }}" {{ old('pre10') == $i ? 'checked' : '' }} />
@@ -320,20 +282,16 @@
                 </div>
                 @endfor
                 
-                <div class="d-inline me-4">
-                    Sangat Setuju
-                </div>
+                <div class="text-muted small fw-bold text-center flex-shrink-0" style="width: 150px;">Sangat Setuju</div>
             </div>
         </div>
-        <div class="mx-5 mb-5">
+        <div class="mx-md-5 mb-5 p-4 bg-white border rounded-4 shadow-sm">
             <div class="text-center">
-                <p class="fw-medium" style="font-size: 1.1rem;">
+                <p class="fw-medium fs-5 text-dark mb-0">
                     Saya percaya bahwa memilih produk ramah lingkungan, berkontribusi dalam mengurangi pencemaran. </p>
             </div>
-            <div class="text-center mb-3">
-                <div class="d-inline mx-3">
-                    Sangat Tidak Setuju
-                </div>
+            <div class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3 bg-light p-3 rounded-3 mt-4">
+                <div class="text-muted small fw-bold text-center flex-shrink-0" style="width: 150px;">Sangat Tidak Setuju</div>
                 @for ($i = 1; $i <= 7; $i++)
                 <div class="form-check form-check-inline">
                     <input class="form-check-input" type="radio" name="pre11" value="{{ $i }}" {{ old('pre11') == $i ? 'checked' : '' }} />
@@ -341,21 +299,17 @@
                 </div>
                 @endfor
                 
-                <div class="d-inline me-4">
-                    Sangat Setuju
-                </div>
+                <div class="text-muted small fw-bold text-center flex-shrink-0" style="width: 150px;">Sangat Setuju</div>
             </div>
         </div>
-        <div class="mx-5 mb-5">
+        <div class="mx-md-5 mb-5 p-4 bg-white border rounded-4 shadow-sm">
             <div class="text-center">
-                <p class="fw-medium" style="font-size: 1.1rem;">
+                <p class="fw-medium fs-5 text-dark mb-0">
                     Saya rela menghabiskan lebih banyak uang untuk produk yang dibuat, diproses, dan dikemas dengan cara
                     yang bertanggung jawab terhadap lingkungan. </p>
             </div>
-            <div class="text-center mb-3">
-                <div class="d-inline mx-3">
-                    Sangat Tidak Setuju
-                </div>
+            <div class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3 bg-light p-3 rounded-3 mt-4">
+                <div class="text-muted small fw-bold text-center flex-shrink-0" style="width: 150px;">Sangat Tidak Setuju</div>
                 @for ($i = 1; $i <= 7; $i++)
                 <div class="form-check form-check-inline">
                     <input class="form-check-input" type="radio" name="pre12" value="{{ $i }}" {{ old('pre12') == $i ? 'checked' : '' }} />
@@ -363,20 +317,16 @@
                 </div>
                 @endfor
                 
-                <div class="d-inline me-4">
-                    Sangat Setuju
-                </div>
+                <div class="text-muted small fw-bold text-center flex-shrink-0" style="width: 150px;">Sangat Setuju</div>
             </div>
         </div>
-        <div class="mx-5 mb-5">
+        <div class="mx-md-5 mb-5 p-4 bg-white border rounded-4 shadow-sm">
             <div class="text-center">
-                <p class="fw-medium" style="font-size: 1.1rem;">
+                <p class="fw-medium fs-5 text-dark mb-0">
                     Untuk membeli produk dengan kemasan ramah lingkungan, saya akan siap membayar uang tambahan. </p>
             </div>
-            <div class="text-center mb-3">
-                <div class="d-inline mx-3">
-                    Sangat Tidak Setuju
-                </div>
+            <div class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3 bg-light p-3 rounded-3 mt-4">
+                <div class="text-muted small fw-bold text-center flex-shrink-0" style="width: 150px;">Sangat Tidak Setuju</div>
                 @for ($i = 1; $i <= 7; $i++)
                 <div class="form-check form-check-inline">
                     <input class="form-check-input" type="radio" name="pre13" value="{{ $i }}" {{ old('pre13') == $i ? 'checked' : '' }} />
@@ -384,21 +334,17 @@
                 </div>
                 @endfor
                 
-                <div class="d-inline me-4">
-                    Sangat Setuju
-                </div>
+                <div class="text-muted small fw-bold text-center flex-shrink-0" style="width: 150px;">Sangat Setuju</div>
             </div>
         </div>
-        <div class="mx-5 mb-5">
+        <div class="mx-md-5 mb-5 p-4 bg-white border rounded-4 shadow-sm">
             <div class="text-center">
-                <p class="fw-medium" style="font-size: 1.1rem;">
+                <p class="fw-medium fs-5 text-dark mb-0">
                     Saya akan memilih produk yang tidak berbahaya bagi lingkungan jika diberi pilihan antara dua produk
                     serupa. </p>
             </div>
-            <div class="text-center mb-3">
-                <div class="d-inline mx-3">
-                    Sangat Tidak Setuju
-                </div>
+            <div class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3 bg-light p-3 rounded-3 mt-4">
+                <div class="text-muted small fw-bold text-center flex-shrink-0" style="width: 150px;">Sangat Tidak Setuju</div>
                 @for ($i = 1; $i <= 7; $i++)
                 <div class="form-check form-check-inline">
                     <input class="form-check-input" type="radio" name="pre14" value="{{ $i }}" {{ old('pre14') == $i ? 'checked' : '' }} />
@@ -406,21 +352,17 @@
                 </div>
                 @endfor
                 
-                <div class="d-inline me-4">
-                    Sangat Setuju
-                </div>
+                <div class="text-muted small fw-bold text-center flex-shrink-0" style="width: 150px;">Sangat Setuju</div>
             </div>
         </div>
-        <div class="mx-5 mb-5">
+        <div class="mx-md-5 mb-5 p-4 bg-white border rounded-4 shadow-sm">
             <div class="text-center">
-                <p class="fw-medium" style="font-size: 1.1rem;">
+                <p class="fw-medium fs-5 text-dark mb-0">
                     Saya memeriksa lebih jauh saat membeli suatu produk terkait dengan aspek lingkungan yang akan
                     ditimbulkan. </p>
             </div>
-            <div class="text-center mb-3">
-                <div class="d-inline mx-3">
-                    Sangat Tidak Setuju
-                </div>
+            <div class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3 bg-light p-3 rounded-3 mt-4">
+                <div class="text-muted small fw-bold text-center flex-shrink-0" style="width: 150px;">Sangat Tidak Setuju</div>
                 @for ($i = 1; $i <= 7; $i++)
                 <div class="form-check form-check-inline">
                     <input class="form-check-input" type="radio" name="pre15" value="{{ $i }}" {{ old('pre15') == $i ? 'checked' : '' }} />
@@ -428,20 +370,16 @@
                 </div>
                 @endfor
                 
-                <div class="d-inline me-4">
-                    Sangat Setuju
-                </div>
+                <div class="text-muted small fw-bold text-center flex-shrink-0" style="width: 150px;">Sangat Setuju</div>
             </div>
         </div>
-        <div class="mx-5 mb-5">
+        <div class="mx-md-5 mb-5 p-4 bg-white border rounded-4 shadow-sm">
             <div class="text-center">
-                <p class="fw-medium" style="font-size: 1.1rem;">
+                <p class="fw-medium fs-5 text-dark mb-0">
                     Produk tersebut menipu saya melalui kata-kata ramah lingkungan.</p>
             </div>
-            <div class="text-center mb-3">
-                <div class="d-inline mx-3">
-                    Sangat Tidak Setuju
-                </div>
+            <div class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3 bg-light p-3 rounded-3 mt-4">
+                <div class="text-muted small fw-bold text-center flex-shrink-0" style="width: 150px;">Sangat Tidak Setuju</div>
                 @for ($i = 1; $i <= 7; $i++)
                 <div class="form-check form-check-inline">
                     <input class="form-check-input" type="radio" name="pre16" value="{{ $i }}" {{ old('pre16') == $i ? 'checked' : '' }} />
@@ -449,20 +387,16 @@
                 </div>
                 @endfor
                 
-                <div class="d-inline me-4">
-                    Sangat Setuju
-                </div>
+                <div class="text-muted small fw-bold text-center flex-shrink-0" style="width: 150px;">Sangat Setuju</div>
             </div>
         </div>
-        <div class="mx-5 mb-5">
+        <div class="mx-md-5 mb-5 p-4 bg-white border rounded-4 shadow-sm">
             <div class="text-center">
-                <p class="fw-medium" style="font-size: 1.1rem;">
+                <p class="fw-medium fs-5 text-dark mb-0">
                     Produk tersebut menipu saya melalui visual atau grafik bernuansa lingkungan. </p>
             </div>
-            <div class="text-center mb-3">
-                <div class="d-inline mx-3">
-                    Sangat Tidak Setuju
-                </div>
+            <div class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3 bg-light p-3 rounded-3 mt-4">
+                <div class="text-muted small fw-bold text-center flex-shrink-0" style="width: 150px;">Sangat Tidak Setuju</div>
                 @for ($i = 1; $i <= 7; $i++)
                 <div class="form-check form-check-inline">
                     <input class="form-check-input" type="radio" name="pre17" value="{{ $i }}" {{ old('pre17') == $i ? 'checked' : '' }} />
@@ -470,20 +404,16 @@
                 </div>
                 @endfor
                 
-                <div class="d-inline me-4">
-                    Sangat Setuju
-                </div>
+                <div class="text-muted small fw-bold text-center flex-shrink-0" style="width: 150px;">Sangat Setuju</div>
             </div>
         </div>
-        <div class="mx-5 mb-5">
+        <div class="mx-md-5 mb-5 p-4 bg-white border rounded-4 shadow-sm">
             <div class="text-center">
-                <p class="fw-medium" style="font-size: 1.1rem;">
+                <p class="fw-medium fs-5 text-dark mb-0">
                     Produk tersebut menipu saya dengan klaim ramah lingkungan yang tidak jelas. </p>
             </div>
-            <div class="text-center mb-3">
-                <div class="d-inline mx-3">
-                    Sangat Tidak Setuju
-                </div>
+            <div class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3 bg-light p-3 rounded-3 mt-4">
+                <div class="text-muted small fw-bold text-center flex-shrink-0" style="width: 150px;">Sangat Tidak Setuju</div>
                 @for ($i = 1; $i <= 7; $i++)
                 <div class="form-check form-check-inline">
                     <input class="form-check-input" type="radio" name="pre18" value="{{ $i }}" {{ old('pre18') == $i ? 'checked' : '' }} />
@@ -491,21 +421,17 @@
                 </div>
                 @endfor
                 
-                <div class="d-inline me-4">
-                    Sangat Setuju
-                </div>
+                <div class="text-muted small fw-bold text-center flex-shrink-0" style="width: 150px;">Sangat Setuju</div>
             </div>
         </div>
-        <div class="mx-5 mb-5">
+        <div class="mx-md-5 mb-5 p-4 bg-white border rounded-4 shadow-sm">
             <div class="text-center">
-                <p class="fw-medium" style="font-size: 1.1rem;">
+                <p class="fw-medium fs-5 text-dark mb-0">
                     Produk tersebut melebih-lebihkan fungsi ramah lingkungannya. </p>
             </div>
 
-            <div class="text-center mb-3">
-                <div class="d-inline mx-3">
-                    Sangat Tidak Setuju
-                </div>
+            <div class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3 bg-light p-3 rounded-3 mt-4">
+                <div class="text-muted small fw-bold text-center flex-shrink-0" style="width: 150px;">Sangat Tidak Setuju</div>
 
                 @for ($i = 1; $i <= 7; $i++)
                 <div class="form-check form-check-inline">
@@ -514,21 +440,17 @@
                 </div>
                 @endfor
                 
-                <div class="d-inline me-4">
-                    Sangat Setuju
-                </div>
+                <div class="text-muted small fw-bold text-center flex-shrink-0" style="width: 150px;">Sangat Setuju</div>
             </div>
         </div>
-        <div class="mx-5 mb-5">
+        <div class="mx-md-5 mb-5 p-4 bg-white border rounded-4 shadow-sm">
             <div class="text-center">
-                <p class="fw-medium" style="font-size: 1.1rem;">
+                <p class="fw-medium fs-5 text-dark mb-0">
                     Produk tersebut menyembunyikan informasi penting, membuat klaim ramah lingkungan terdengar lebih baik daripada yang sebenarnya. </p>
             </div>
 
-            <div class="text-center mb-3">
-                <div class="d-inline mx-3">
-                    Sangat Tidak Setuju
-                </div>
+            <div class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3 bg-light p-3 rounded-3 mt-4">
+                <div class="text-muted small fw-bold text-center flex-shrink-0" style="width: 150px;">Sangat Tidak Setuju</div>
 
                 @for ($i = 1; $i <= 7; $i++)
                 <div class="form-check form-check-inline">
@@ -537,22 +459,18 @@
                 </div>
                 @endfor
                 
-                <div class="d-inline me-4">
-                    Sangat Setuju
-                </div>
+                <div class="text-muted small fw-bold text-center flex-shrink-0" style="width: 150px;">Sangat Setuju</div>
             </div>
         </div>
-        <div class="mx-5 mb-5">
+        <div class="mx-md-5 mb-5 p-4 bg-white border rounded-4 shadow-sm">
             <div class="text-center">
-                <p class="fw-medium" style="font-size: 1.1rem;">
+                <p class="fw-medium fs-5 text-dark mb-0">
                     Sulit untuk membedakan produk ini dengan produk lain dalam hal menilai dampak lingkungannya
                 </p>
             </div>
 
-            <div class="text-center mb-3">
-                <div class="d-inline mx-3">
-                    Sangat Tidak Setuju
-                </div>
+            <div class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3 bg-light p-3 rounded-3 mt-4">
+                <div class="text-muted small fw-bold text-center flex-shrink-0" style="width: 150px;">Sangat Tidak Setuju</div>
 
                 @for ($i = 1; $i <= 7; $i++)
                 <div class="form-check form-check-inline">
@@ -560,22 +478,18 @@
                     <label class="form-check-label">{{ $i }}</label>
                 </div>
                 @endfor
-                <div class="d-inline me-4">
-                    Sangat Setuju
-                </div>
+                <div class="text-muted small fw-bold text-center flex-shrink-0" style="width: 150px;">Sangat Setuju</div>
             </div>
         </div>
-        <div class="mx-5 mb-5">
+        <div class="mx-md-5 mb-5 p-4 bg-white border rounded-4 shadow-sm">
             <div class="text-center">
-                <p class="fw-medium" style="font-size: 1.1rem;">
+                <p class="fw-medium fs-5 text-dark mb-0">
                     Karena banyak produk yang mirip dalam hal dampak lingkungan, jadi sulit mengenali produk mana yang lebih baik.
                 </p>
             </div>
 
-            <div class="text-center mb-3">
-                <div class="d-inline mx-3">
-                    Sangat Tidak Setuju
-                </div>
+            <div class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3 bg-light p-3 rounded-3 mt-4">
+                <div class="text-muted small fw-bold text-center flex-shrink-0" style="width: 150px;">Sangat Tidak Setuju</div>
 
                 @for ($i = 1; $i <= 7; $i++)
                 <div class="form-check form-check-inline">
@@ -583,43 +497,35 @@
                     <label class="form-check-label">{{ $i }}</label>
                 </div>
                 @endfor
-                <div class="d-inline me-4">
-                    Sangat Setuju
-                </div>
+                <div class="text-muted small fw-bold text-center flex-shrink-0" style="width: 150px;">Sangat Setuju</div>
             </div>
         </div>
-        <div class="mx-5 mb-5">
+        <div class="mx-md-5 mb-5 p-4 bg-white border rounded-4 shadow-sm">
             <div class="text-center">
-                <p class="fw-medium" style="font-size: 1.1rem;">
+                <p class="fw-medium fs-5 text-dark mb-0">
                     Ada begitu banyak pilihan produk sejenis sehingga saya merasa bingung memilih mana yang lebih ramah lingkungan
                 </p>
             </div>
-            <div class="text-center mb-3">
-                <div class="d-inline mx-3">
-                    Sangat Tidak Setuju
-                </div>
+            <div class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3 bg-light p-3 rounded-3 mt-4">
+                <div class="text-muted small fw-bold text-center flex-shrink-0" style="width: 150px;">Sangat Tidak Setuju</div>
                 @for ($i = 1; $i <= 7; $i++)
                 <div class="form-check form-check-inline">
                     <input class="form-check-input" type="radio" name="pre23" value="{{ $i }}" {{ old('pre23') == $i ? 'checked' : '' }} />
                     <label class="form-check-label">{{ $i }}</label>
                 </div>
                 @endfor
-                <div class="d-inline me-4">
-                    Sangat Setuju
-                </div>
+                <div class="text-muted small fw-bold text-center flex-shrink-0" style="width: 150px;">Sangat Setuju</div>
             </div>
         </div>
-        <div class="mx-5 mb-5">
+        <div class="mx-md-5 mb-5 p-4 bg-white border rounded-4 shadow-sm">
             <div class="text-center">
-                <p class="fw-medium" style="font-size: 1.1rem;">
+                <p class="fw-medium fs-5 text-dark mb-0">
                     Banyaknya pilihan produk membuat saya merasa bingung untuk memilih produk karena penilaian dampak lingkungan hidup susah dibandingkan
                 </p>
             </div>
 
-            <div class="text-center mb-3">
-                <div class="d-inline mx-3">
-                    Sangat Tidak Setuju
-                </div>
+            <div class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3 bg-light p-3 rounded-3 mt-4">
+                <div class="text-muted small fw-bold text-center flex-shrink-0" style="width: 150px;">Sangat Tidak Setuju</div>
 
                 @for ($i = 1; $i <= 7; $i++)
                 <div class="form-check form-check-inline">
@@ -627,22 +533,18 @@
                     <label class="form-check-label">{{ $i }}</label>
                 </div>
                 @endfor
-                <div class="d-inline me-4">
-                    Sangat Setuju
-                </div>
+                <div class="text-muted small fw-bold text-center flex-shrink-0" style="width: 150px;">Sangat Setuju</div>
             </div>
         </div>
-        <div class="mx-5 mb-5">
+        <div class="mx-md-5 mb-5 p-4 bg-white border rounded-4 shadow-sm">
             <div class="text-center">
-                <p class="fw-medium" style="font-size: 1.1rem;">
+                <p class="fw-medium fs-5 text-dark mb-0">
                     Saat membeli produk ini, saya merasa tidak cukup mendapatkan informasi mengenai dampak lingkungannya
                 </p>
             </div>
 
-            <div class="text-center mb-3">
-                <div class="d-inline mx-3">
-                    Sangat Tidak Setuju
-                </div>
+            <div class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3 bg-light p-3 rounded-3 mt-4">
+                <div class="text-muted small fw-bold text-center flex-shrink-0" style="width: 150px;">Sangat Tidak Setuju</div>
 
                 @for ($i = 1; $i <= 7; $i++)
                 <div class="form-check form-check-inline">
@@ -650,21 +552,17 @@
                     <label class="form-check-label">{{ $i }}</label>
                 </div>
                 @endfor
-                <div class="d-inline me-4">
-                    Sangat Setuju
-                </div>
+                <div class="text-muted small fw-bold text-center flex-shrink-0" style="width: 150px;">Sangat Setuju</div>
             </div>
         </div>
-        <div class="mx-5 mb-5">
+        <div class="mx-md-5 mb-5 p-4 bg-white border rounded-4 shadow-sm">
             <div class="text-center">
-                <p class="fw-medium" style="font-size: 1.1rem;">
+                <p class="fw-medium fs-5 text-dark mb-0">
                     Saat membeli produk ini, saya merasa tidak percaya dengan dampak lingkungan yang diklaimnya </p>
             </div>
 
-            <div class="text-center mb-3">
-                <div class="d-inline mx-3">
-                    Sangat Tidak Setuju
-                </div>
+            <div class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3 bg-light p-3 rounded-3 mt-4">
+                <div class="text-muted small fw-bold text-center flex-shrink-0" style="width: 150px;">Sangat Tidak Setuju</div>
 
                 @for ($i = 1; $i <= 7; $i++)
                 <div class="form-check form-check-inline">
@@ -672,22 +570,18 @@
                     <label class="form-check-label">{{ $i }}</label>
                 </div>
                 @endfor
-                <div class="d-inline me-4">
-                    Sangat Setuju
-                </div>
+                <div class="text-muted small fw-bold text-center flex-shrink-0" style="width: 150px;">Sangat Setuju</div>
             </div>
         </div>
-        <div class="mx-5 mb-5">
+        <div class="mx-md-5 mb-5 p-4 bg-white border rounded-4 shadow-sm">
             <div class="text-center">
-                <p class="fw-medium" style="font-size: 1.1rem;">
+                <p class="fw-medium fs-5 text-dark mb-0">
                     Saya merasa reputasi lingkungan dari produk ini secara umum dapat diandalkan
                 </p>
             </div>
 
-            <div class="text-center mb-3">
-                <div class="d-inline mx-3">
-                    Sangat Tidak Setuju
-                </div>
+            <div class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3 bg-light p-3 rounded-3 mt-4">
+                <div class="text-muted small fw-bold text-center flex-shrink-0" style="width: 150px;">Sangat Tidak Setuju</div>
 
                 @for ($i = 1; $i <= 7; $i++)
                 <div class="form-check form-check-inline">
@@ -695,21 +589,17 @@
                     <label class="form-check-label">{{ $i }}</label>
                 </div>
                 @endfor
-                <div class="d-inline me-4">
-                    Sangat Setuju
-                </div>
+                <div class="text-muted small fw-bold text-center flex-shrink-0" style="width: 150px;">Sangat Setuju</div>
             </div>
         </div>
-        <div class="mx-5 mb-5">
+        <div class="mx-md-5 mb-5 p-4 bg-white border rounded-4 shadow-sm">
             <div class="text-center">
-                <p class="fw-medium" style="font-size: 1.1rem;">
+                <p class="fw-medium fs-5 text-dark mb-0">
                     Saya merasa bahwa kinerja lingkungan dari produk ini secara umum dapat diandalkan </p>
             </div>
 
-            <div class="text-center mb-3">
-                <div class="d-inline mx-3">
-                    Sangat Tidak Setuju
-                </div>
+            <div class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3 bg-light p-3 rounded-3 mt-4">
+                <div class="text-muted small fw-bold text-center flex-shrink-0" style="width: 150px;">Sangat Tidak Setuju</div>
 
                 @for ($i = 1; $i <= 7; $i++)
                 <div class="form-check form-check-inline">
@@ -717,21 +607,17 @@
                     <label class="form-check-label">{{ $i }}</label>
                 </div>
                 @endfor
-                <div class="d-inline me-4">
-                    Sangat Setuju
-                </div>
+                <div class="text-muted small fw-bold text-center flex-shrink-0" style="width: 150px;">Sangat Setuju</div>
             </div>
         </div>
-        <div class="mx-5 mb-5">
+        <div class="mx-md-5 mb-5 p-4 bg-white border rounded-4 shadow-sm">
             <div class="text-center">
-                <p class="fw-medium" style="font-size: 1.1rem;">
+                <p class="fw-medium fs-5 text-dark mb-0">
                     Saya merasa bahwa klaim lingkungan dari produk ini secara umum dapat dipercaya </p>
             </div>
 
-            <div class="text-center mb-3">
-                <div class="d-inline mx-3">
-                    Sangat Tidak Setuju
-                </div>
+            <div class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3 bg-light p-3 rounded-3 mt-4">
+                <div class="text-muted small fw-bold text-center flex-shrink-0" style="width: 150px;">Sangat Tidak Setuju</div>
 
                 @for ($i = 1; $i <= 7; $i++)
                 <div class="form-check form-check-inline">
@@ -739,21 +625,17 @@
                     <label class="form-check-label">{{ $i }}</label>
                 </div>
                 @endfor
-                <div class="d-inline me-4">
-                    Sangat Setuju
-                </div>
+                <div class="text-muted small fw-bold text-center flex-shrink-0" style="width: 150px;">Sangat Setuju</div>
             </div>
         </div>
-        <div class="mx-5 mb-5">
+        <div class="mx-md-5 mb-5 p-4 bg-white border rounded-4 shadow-sm">
             <div class="text-center">
-                <p class="fw-medium" style="font-size: 1.1rem;">
+                <p class="fw-medium fs-5 text-dark mb-0">
                     Harapan saya terkait kepedulian produk ini terhadap lingkungan telah terpenuhi </p>
             </div>
 
-            <div class="text-center mb-3">
-                <div class="d-inline mx-3">
-                    Sangat Tidak Setuju
-                </div>
+            <div class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3 bg-light p-3 rounded-3 mt-4">
+                <div class="text-muted small fw-bold text-center flex-shrink-0" style="width: 150px;">Sangat Tidak Setuju</div>
 
                 @for ($i = 1; $i <= 7; $i++)
                 <div class="form-check form-check-inline">
@@ -761,21 +643,17 @@
                     <label class="form-check-label">{{ $i }}</label>
                 </div>
                 @endfor
-                <div class="d-inline me-4">
-                    Sangat Setuju
-                </div>
+                <div class="text-muted small fw-bold text-center flex-shrink-0" style="width: 150px;">Sangat Setuju</div>
             </div>
         </div>
-        <div class="mx-5 mb-5">
+        <div class="mx-md-5 mb-5 p-4 bg-white border rounded-4 shadow-sm">
             <div class="text-center">
-                <p class="fw-medium" style="font-size: 1.1rem;">
+                <p class="fw-medium fs-5 text-dark mb-0">
                     Produk ini menepati janji dan komitmen dalam hal perlindungan lingkungan </p>
             </div>
 
-            <div class="text-center mb-3">
-                <div class="d-inline mx-3">
-                    Sangat Tidak Setuju
-                </div>
+            <div class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3 bg-light p-3 rounded-3 mt-4">
+                <div class="text-muted small fw-bold text-center flex-shrink-0" style="width: 150px;">Sangat Tidak Setuju</div>
 
                 @for ($i = 1; $i <= 7; $i++)
                 <div class="form-check form-check-inline">
@@ -783,21 +661,17 @@
                     <label class="form-check-label">{{ $i }}</label>
                 </div>
                 @endfor
-                <div class="d-inline me-4">
-                    Sangat Setuju
-                </div>
+                <div class="text-muted small fw-bold text-center flex-shrink-0" style="width: 150px;">Sangat Setuju</div>
             </div>
         </div>
-        <div class="mx-5 mb-5">
+        <div class="mx-md-5 mb-5 p-4 bg-white border rounded-4 shadow-sm">
             <div class="text-center">
-                <p class="fw-medium" style="font-size: 1.1rem;">
+                <p class="fw-medium fs-5 text-dark mb-0">
                     Produk ini dianggap sebagai standar emas dalam hal komitmen lingkungan </p>
             </div>
 
-            <div class="text-center mb-3">
-                <div class="d-inline mx-3">
-                    Sangat Tidak Setuju
-                </div>
+            <div class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3 bg-light p-3 rounded-3 mt-4">
+                <div class="text-muted small fw-bold text-center flex-shrink-0" style="width: 150px;">Sangat Tidak Setuju</div>
 
                 @for ($i = 1; $i <= 7; $i++)
                 <div class="form-check form-check-inline">
@@ -805,21 +679,17 @@
                     <label class="form-check-label">{{ $i }}</label>
                 </div>
                 @endfor
-                <div class="d-inline me-4">
-                    Sangat Setuju
-                </div>
+                <div class="text-muted small fw-bold text-center flex-shrink-0" style="width: 150px;">Sangat Setuju</div>
             </div>
         </div>
-        <div class="mx-5 mb-5">
+        <div class="mx-md-5 mb-5 p-4 bg-white border rounded-4 shadow-sm">
             <div class="text-center">
-                <p class="fw-medium" style="font-size: 1.1rem;">
+                <p class="fw-medium fs-5 text-dark mb-0">
                     Produk ini memiliki keberhasilan yang baik dalam hal kelestarian lingkungan hidup </p>
             </div>
 
-            <div class="text-center mb-3">
-                <div class="d-inline mx-3">
-                    Sangat Tidak Setuju
-                </div>
+            <div class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3 bg-light p-3 rounded-3 mt-4">
+                <div class="text-muted small fw-bold text-center flex-shrink-0" style="width: 150px;">Sangat Tidak Setuju</div>
 
                 @for ($i = 1; $i <= 7; $i++)
                 <div class="form-check form-check-inline">
@@ -827,21 +697,17 @@
                     <label class="form-check-label">{{ $i }}</label>
                 </div>
                 @endfor
-                <div class="d-inline me-4">
-                    Sangat Setuju
-                </div>
+                <div class="text-muted small fw-bold text-center flex-shrink-0" style="width: 150px;">Sangat Setuju</div>
             </div>
         </div>
-        <div class="mx-5 mb-5">
+        <div class="mx-md-5 mb-5 p-4 bg-white border rounded-4 shadow-sm">
             <div class="text-center">
-                <p class="fw-medium" style="font-size: 1.1rem;">
+                <p class="fw-medium fs-5 text-dark mb-0">
                     Produk ini memiliki keberhasilan yang baik dalam hal kelestarian lingkungan hidup </p>
             </div>
 
-            <div class="text-center mb-3">
-                <div class="d-inline mx-3">
-                    Sangat Tidak Setuju
-                </div>
+            <div class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3 bg-light p-3 rounded-3 mt-4">
+                <div class="text-muted small fw-bold text-center flex-shrink-0" style="width: 150px;">Sangat Tidak Setuju</div>
 
                 @for ($i = 1; $i <= 7; $i++)
                 <div class="form-check form-check-inline">
@@ -849,21 +715,17 @@
                     <label class="form-check-label">{{ $i }}</label>
                 </div>
                 @endfor
-                <div class="d-inline me-4">
-                    Sangat Setuju
-                </div>
+                <div class="text-muted small fw-bold text-center flex-shrink-0" style="width: 150px;">Sangat Setuju</div>
             </div>
         </div>
-        <div class="mx-5 mb-5">
+        <div class="mx-md-5 mb-5 p-4 bg-white border rounded-4 shadow-sm">
             <div class="text-center">
-                <p class="fw-medium" style="font-size: 1.1rem;">
+                <p class="fw-medium fs-5 text-dark mb-0">
                     Produk ini terkenal dalam hal permasalahan lingkungan hidup </p>
             </div>
 
-            <div class="text-center mb-3">
-                <div class="d-inline mx-3">
-                    Sangat Tidak Setuju
-                </div>
+            <div class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3 bg-light p-3 rounded-3 mt-4">
+                <div class="text-muted small fw-bold text-center flex-shrink-0" style="width: 150px;">Sangat Tidak Setuju</div>
 
                 @for ($i = 1; $i <= 7; $i++)
                 <div class="form-check form-check-inline">
@@ -871,21 +733,17 @@
                     <label class="form-check-label">{{ $i }}</label>
                 </div>
                 @endfor
-                <div class="d-inline me-4">
-                    Sangat Setuju
-                </div>
+                <div class="text-muted small fw-bold text-center flex-shrink-0" style="width: 150px;">Sangat Setuju</div>
             </div>
         </div>
-        <div class="mx-5 mb-5">
+        <div class="mx-md-5 mb-5 p-4 bg-white border rounded-4 shadow-sm">
             <div class="text-center">
-                <p class="fw-medium" style="font-size: 1.1rem;">
+                <p class="fw-medium fs-5 text-dark mb-0">
                     Komitmen lingkungan dari produk ini dapat dipercaya </p>
             </div>
 
-            <div class="text-center mb-3">
-                <div class="d-inline mx-3">
-                    Sangat Tidak Setuju
-                </div>
+            <div class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3 bg-light p-3 rounded-3 mt-4">
+                <div class="text-muted small fw-bold text-center flex-shrink-0" style="width: 150px;">Sangat Tidak Setuju</div>
 
                 @for ($i = 1; $i <= 7; $i++)
                 <div class="form-check form-check-inline">
@@ -893,9 +751,7 @@
                     <label class="form-check-label">{{ $i }}</label>
                 </div>
                 @endfor
-                <div class="d-inline me-4">
-                    Sangat Setuju
-                </div>
+                <div class="text-muted small fw-bold text-center flex-shrink-0" style="width: 150px;">Sangat Setuju</div>
             </div>
         </div>
         <button type="submit" onclick='location.href="/select"'
