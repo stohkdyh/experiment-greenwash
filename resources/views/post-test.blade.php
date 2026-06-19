@@ -58,7 +58,7 @@
 </head>
 
 <body style="background-color: #f1f1f1;">
-    <form class="card shadow border-0 mx-auto my-5 p-3 p-md-5 rounded-4" style="max-width: 1000px;" action="{{ route('postTest.store') }}" method="POST">
+    <form class="card shadow border-0 mx-auto my-5 p-3 p-md-5 rounded-4" style="max-width: 1400px; width: 95%;" action="{{ route('postTest.store') }}" method="POST">
 
         @csrf
 
