@@ -17,7 +17,7 @@ class PreTestController extends Controller
         $preTests = PreTest::latest()->paginate(10);
         
         //render view with products
-        return view('\select', compact('preTests'));
+        return view('select', compact('preTests'));
     }
     
     public function create(): View

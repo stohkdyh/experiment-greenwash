@@ -21,7 +21,7 @@ class UserController extends Controller
         $usersInfo = User::latest()->paginate(10);
 
         //render view with products
-        return view('\index', compact('usersInfo'));
+        return view('index', compact('usersInfo'));
     }
 
     public function create(): View

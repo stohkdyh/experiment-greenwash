@@ -16,7 +16,7 @@ class PostTestController extends Controller
         $postTests = PostTest::latest()->paginate(10);
         
         //render view with products
-        return view('\end', compact('postTests'));
+        return view('end', compact('postTests'));
     }
     
     public function create(): View
