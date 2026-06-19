@@ -2,13 +2,13 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\UserInfo;
+use App\Models\User;
 use Illuminate\View\View;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\RedirectResponse;
 
-class UserInfoController extends Controller
+class UserController extends Controller
 {   
 
     public function index() : View
@@ -18,7 +18,7 @@ class UserInfoController extends Controller
         // // Access user properties
         // $userId = $user->name;
         //get all products
-        $usersInfo = UserInfo::latest()->paginate(10);
+        $usersInfo = User::latest()->paginate(10);
 
         //render view with products
         return view('\index', compact('usersInfo'));
@@ -42,7 +42,7 @@ class UserInfoController extends Controller
             'income' => 'required|string',
         ]);
 
-        $user = UserInfo::create([
+        $user = User::create([
             'name' => $request->name,
             'gender' => $request->gender,
             'age' => $request->age,

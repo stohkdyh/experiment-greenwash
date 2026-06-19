@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\IndexController;
 use App\Http\Controllers\PreTestController;
-use App\Http\Controllers\UserInfoController;
+use App\Http\Controllers\UserController;
 
 Route::get('/', function () {
     return view('start');;
@@ -43,10 +43,10 @@ Route::get('/select', function () {
 });
 
 
-Route::resource('/userInfo', \App\Http\Controllers\UserInfoController::class);
+Route::resource('/userInfo', \App\Http\Controllers\UserController::class);
 Route::resource('/preTest', \App\Http\Controllers\PreTestController::class);
 Route::resource('/postTest', \App\Http\Controllers\PostTestController::class);
-Route::post('/user', [UserInfoController::class, 'store'])->name('user.store');
+Route::post('/user', [UserController::class, 'store'])->name('user.store');
 // Route::get('/index/{user_id}', [IndexController::class, 'show'])->name('index.show');
 // Route::get('/pre-test/{user_id}', [PreTestController::class, 'create'])->name('preTest.create');
 // Route::post('/pre-test/{user_id}', [PreTestController::class, 'store'])->name('preTest.store');
