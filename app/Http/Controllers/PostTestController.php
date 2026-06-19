@@ -28,8 +28,6 @@ class PostTestController extends Controller
     {
         //validate form
         $request->validate([
-            'name' => 'required|string',
-            'kode_berita' => 'required|string',
             'manipulation1' => 'required|string',
             'manipulation2'=> 'required|string',
             'manipulation3'=> 'required|string',
@@ -78,8 +76,8 @@ class PostTestController extends Controller
 
         //create product
         PostTest::create([
-            'name' => $request->name,
-            'kode_berita' => $request->kode_berita,
+            'name' => session('user_name', 'Unknown'),
+            'kode_berita' => session('kode_berita', '-'),
             'manipulation1'=> $request->manipulation1,
             'manipulation2'=> $request->manipulation2,
             'manipulation3'=> $request->manipulation3,

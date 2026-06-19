@@ -12,13 +12,25 @@ Route::get('/end', function () {
     return view('end');;
 });
 Route::get('/news-gwash', function () {
-    return view('news-gwash');;
+    session(['kode_berita' => 'C']);
+    if (session()->has('pre_test_id')) {
+        \App\Models\PreTest::where('id', session('pre_test_id'))->update(['kode_berita' => 'C']);
+    }
+    return view('news-gwash');
 });
 Route::get('/news-partial', function () {
-    return view('news-partial');;
+    session(['kode_berita' => 'B']);
+    if (session()->has('pre_test_id')) {
+        \App\Models\PreTest::where('id', session('pre_test_id'))->update(['kode_berita' => 'B']);
+    }
+    return view('news-partial');
 });
 Route::get('/news-vocal', function () {
-    return view('news-vocal');;
+    session(['kode_berita' => 'A']);
+    if (session()->has('pre_test_id')) {
+        \App\Models\PreTest::where('id', session('pre_test_id'))->update(['kode_berita' => 'A']);
+    }
+    return view('news-vocal');
 });
 Route::get('/pre-test', function () {
     return view('pre-test');;

@@ -75,27 +75,7 @@
         {{-- <p class="text-center mx-5">Mohon isi form dibawah dengan sebenar-benarnya sesuai dengan yang anda rasakan dari
             melihat berita
             sebelumnya.</p> --}}
-        <div class="row mx-md-5 bg-white p-4 border rounded-4 shadow-sm mb-5">
-            <div class="col text-start">
-                <div class="mb-5 text-start"><label class="form-label text-start">
-                    <h4>Nama Lengkap</h4>
-                </label>
-                <div class="input-group"><input class="form-control" type="text" name="name" value="{{ old('name') }}"
-                    placeholder="Masukkan Nama Lengkap Anda"></div>
-                </div>
-            </div>
-            <div class="col text-start">
-                <label class="form-label">
-                    <h4>Kode Berita</h4>
-                </label>
-                <div class="input-group mb-3"><select class="form-select" id="swal-input2" name="kode_berita" value="{{ old('kode_berita') }}">
-                    <option selected disabled>Pilih Kode Berita Anda</option>
-                    <option value="A">A</option>
-                    <option value="B">B</option>
-                    <option value="C">C</option>
-                </select></div>
-            </div>
-        </div>
+        
         
 
         <!-- Card -->

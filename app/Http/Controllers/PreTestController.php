@@ -29,8 +29,6 @@ class PreTestController extends Controller
     {
         //validate form
         $request->validate([
-            'name' => 'required|string',
-            'kode_berita' => 'required|string',
             'pre1' => 'required|string',
             'pre2'=> 'required|string',
             'pre3'=> 'required|string',
@@ -70,9 +68,9 @@ class PreTestController extends Controller
         ]);
 
         //create product
-        PreTest::create([
-            'name' => $request->name,
-            'kode_berita' => $request->kode_berita,
+        $preTest = PreTest::create([
+            'name' => session('user_name', 'Unknown'),
+            'kode_berita' => '-',
             'pre1' => $request->pre1,
             'pre2'=> $request->pre2,
             'pre3'=> $request->pre3,
@@ -110,6 +108,8 @@ class PreTestController extends Controller
             'pre35'=> $request->pre35,
             'pre36'=> $request->pre36,
         ]);
+
+        session(['pre_test_id' => $preTest->id]);
 
         //redirect to index
         return redirect()->route('preTest.index')->with(['success' => 'Data Berhasil Disimpan!']);

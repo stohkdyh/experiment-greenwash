@@ -52,6 +52,8 @@ class UserInfoController extends Controller
             'income' => $request->income,
         ]);
 
+        session(['user_name' => $request->name]);
+
         // return response()->json(['success' => 'Data saved successfully']);
         // return redirect()->route('index.show', ['user_id' => $user->id]);
         return redirect()->route('userInfo.index', ['user_id' => $user->id])->with(['success' => 'Data Berhasil Disimpan!']);
