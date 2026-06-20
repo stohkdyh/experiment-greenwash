@@ -43,7 +43,10 @@ Proyek ini dibangun menggunakan teknologi modern untuk memastikan kecepatan, kea
 Aplikasi berjalan dengan alur linear yang didesain sedemikian rupa agar responden menyelesaikan eksperimen secara bertahap:
 1. **Halaman Mulai (`/`)**: Pengguna disambut dan diminta mengisi data demografi dasar yang terhubung langsung ke tabel `users`.
 2. **Pre-test (`/preTest`)**: Penilaian awal terhadap pengetahuan pengguna sebelum intervensi.
-3. **Materi Edukasi / Berita**: Pengguna diarahkan secara acak (atau melalui skenario) ke halaman berita tertentu (misal: `/news-gwash`) untuk membaca artikel dan menonton video studi kasus Cista Water.
+3. **Materi Edukasi / Berita**: Pengguna diarahkan secara acak (atau melalui skenario) ke halaman berita tertentu untuk membaca artikel dan menonton video studi kasus Cista Water. Terdapat tiga skenario berita dengan kode:
+   - **Berita A (Vocal)**: Kode `VOCL`
+   - **Berita B (Partial)**: Kode `PART`
+   - **Berita C (Greenwash)**: Kode `WASH`
 4. **Post-test (`/postTest`)**: Penilaian akhir untuk membandingkan perubahan persepsi setelah menerima informasi.
 5. **Selesai (`/end`)**: Ucapan terima kasih dan penutupan eksperimen.
 
